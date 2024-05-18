@@ -4,9 +4,15 @@ class Teacher extends University
 {
     public function __construct(private $teacherName, private $teacherAge, private $subject,   private University $university)
     {
-    //     $this->universityName = $university->universityName;
-    //     $this->universityAddress = $university->universityAddress;
-    //     $this->licenseNo = $university->licenseNo;
+        // $this->universityName = $university->universityName;
+        // $this->universityAddress = $university->universityAddress;
+        // $this->licenseNo = $university->licenseNo;
+
+        parent::__construct(
+            $university->universityName,
+            $university->universityAddress,
+            $university->licenseNo
+        );
 
     }
 
